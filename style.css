@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header .contact span {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+section {
+    background: #fff;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+.job ul {
+    margin-left: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+}
