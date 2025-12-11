@@ -16,27 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1
-          bundler-cache: true
-
-      - name: Install gems
-        run: |
-          gem install bundler --conservative
-          bundle install --jobs 4 --retry 3
-
-      - name: Build Jekyll site
-        env:
-          JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --destination _site
-
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
