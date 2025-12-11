@@ -17,7 +17,3 @@ This repository hosts my personal portfolio website, showcasing my experience as
 ## Deployment
 This project uses **GitHub Actions** to automatically deploy changes to GitHub Pages whenever a commit is pushed to the `main` branch.
 
-### Local Development
-To view this site locally:
-1. Clone the repository.
-2. Open `index.html` in your browser.
