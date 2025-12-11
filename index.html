@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praveen Aketi | DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css?v=4" />
+    <link rel="stylesheet" href="style.css?v=5" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,7 @@
 
     <!-- Navbar -->
     <nav>
-        <div style="font-family: 'Fira Code', monospace; color: #64ffda; font-weight: 700; font-size: 1.2rem;">
+        <div class="logo">
             PA.
         </div>
         <div class="nav-links">
@@ -49,7 +49,7 @@
         <!-- About / Summary Section -->
         <section id="about">
             <h2 class="section-title">About Me</h2>
-            <div style="font-size: 1.1rem; color: #8892b0;">
+            <div style="font-size: 1.1rem; color: var(--text-secondary);">
                 <p>
                     Hello! My name is Praveen and I enjoy creating things that live on the cloud. My interest in DevOps
                     started back in 2018 when I decided to automate a manual deployment task — turns out hacking
@@ -67,80 +67,76 @@
             </div>
         </section>
 
-        <!-- Experience Section (Timeline) -->
+        <!-- Experience Section (Timeline / Cards) -->
         <section id="experience">
             <h2 class="section-title">Where I've Worked</h2>
 
             <div class="job-item">
-                <div class="job-timeline-nav"></div>
-                <div class="job-content">
-                    <div class="job-header">
+                <div class="job-header">
+                    <div>
                         <h3>DevOps/SRE Engineer <span>@ Inmar Intelligence</span></h3>
-                        <span class="job-dates">March 2023 - March 2024</span>
                     </div>
-                    <div class="job-desc">
-                        <ul>
-                            <li>Designed & optimized CI/CD pipelines (GitHub Actions), reducing release times by 40%.
-                            </li>
-                            <li>Deployed & managed Kubernetes clusters (EKS, AKS) with auto-scaling (99.9% uptime).</li>
-                            <li>Automated infrastructure provisioning with Terraform (under 1 hour setup).</li>
-                            <li>Implemented Redis Sentinel & Cluster for zero-downtime failover.</li>
-                            <li>Created Python automation scripts saving 15+ engineer-hours/week.</li>
-                        </ul>
-                    </div>
+                    <span class="job-dates">March 2023 - March 2024</span>
+                </div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Designed & optimized CI/CD pipelines (GitHub Actions), reducing release times by 40%.</li>
+                        <li>Deployed & managed Kubernetes clusters (EKS, AKS) with auto-scaling (99.9% uptime).</li>
+                        <li>Automated infrastructure provisioning with Terraform (under 1 hour setup).</li>
+                        <li>Implemented Redis Sentinel & Cluster for zero-downtime failover.</li>
+                        <li>Created Python automation scripts saving 15+ engineer-hours/week.</li>
+                        <li>Enforced HIPAA-compliant infrastructure with encryption-at-rest.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="job-item">
-                <div class="job-timeline-nav"></div>
-                <div class="job-content">
-                    <div class="job-header">
+                <div class="job-header">
+                    <div>
                         <h3>Software Engineer 2 <span>@ Zscaler</span></h3>
-                        <span class="job-dates">Aug 2022 - Dec 2022</span>
                     </div>
-                    <div class="job-desc">
-                        <ul>
-                            <li>Built CI/CD pipelines using Azure Pipelines & GitHub Actions.</li>
-                            <li>Deployed apps to AKS with Helm & FluxCD (GitOps).</li>
-                            <li>Scaled AKS clusters using HPA/VPA, optimizing resources by 20%.</li>
-                            <li>Implemented cost governance (reduction by 15%) & security (Azure AD, RBAC).</li>
-                        </ul>
-                    </div>
+                    <span class="job-dates">Aug 2022 - Dec 2022</span>
+                </div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Built CI/CD pipelines using Azure Pipelines & GitHub Actions.</li>
+                        <li>Deployed apps to AKS with Helm & FluxCD (GitOps).</li>
+                        <li>Scaled AKS clusters using HPA/VPA, optimizing resources by 20%.</li>
+                        <li>Implemented cost governance (reduction by 15%) & security (Azure AD, RBAC).</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="job-item">
-                <div class="job-timeline-nav"></div>
-                <div class="job-content">
-                    <div class="job-header">
+                <div class="job-header">
+                    <div>
                         <h3>SRE Engineer <span>@ Harman</span></h3>
-                        <span class="job-dates">Feb 2021 - July 2022</span>
                     </div>
-                    <div class="job-desc">
-                        <ul>
-                            <li>Built CI/CD pipelines using Jenkins & Azure Pipelines with SonarQube.</li>
-                            <li>Managed hybrid-cloud infrastructure (AWS/Azure) with Terraform.</li>
-                            <li>Developed Ansible playbooks cutting manual configuration by 70%.</li>
-                            <li>Implemented observability with Prometheus & Grafana.</li>
-                        </ul>
-                    </div>
+                    <span class="job-dates">Feb 2021 - July 2022</span>
+                </div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Built CI/CD pipelines using Jenkins & Azure Pipelines with SonarQube.</li>
+                        <li>Managed hybrid-cloud infrastructure (AWS/Azure) with Terraform.</li>
+                        <li>Developed Ansible playbooks cutting manual configuration by 70%.</li>
+                        <li>Implemented observability with Prometheus & Grafana.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="job-item">
-                <div class="job-timeline-nav"></div>
-                <div class="job-content">
-                    <div class="job-header">
+                <div class="job-header">
+                    <div>
                         <h3>Assoc. Software Engineer <span>@ C2N IT Services</span></h3>
-                        <span class="job-dates">Sept 2018 - Jan 2021</span>
                     </div>
-                    <div class="job-desc">
-                        <ul>
-                            <li>Implemented CI/CD in Jenkins, reducing build failures by 20%.</li>
-                            <li>Managed Git repositories and branching strategies.</li>
-                            <li>Automated routine tasks with Shell scripts.</li>
-                        </ul>
-                    </div>
+                    <span class="job-dates">Sept 2018 - Jan 2021</span>
+                </div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Implemented CI/CD in Jenkins, reducing build failures by 20%.</li>
+                        <li>Managed Git repositories and branching strategies.</li>
+                        <li>Automated routine server administration tasks with Shell scripts.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -148,14 +144,13 @@
 
         <!-- Combined Skills & Education Section -->
         <section id="skills">
-            <!-- Title removed as requested -->
 
             <div class="combo-grid">
                 <!-- Left: Tech Stack -->
                 <div>
-                    <h3 style="color: #ccd6f6; margin-bottom: 20px;">Technologies</h3>
+                    <h3 class="sub-title">Technologies</h3>
 
-                    <h4 style="color: #64ffda; font-size: 0.95rem; margin-bottom: 10px;">Cloud & Infrastructure</h4>
+                    <h4 class="cat-title">Cloud & Infrastructure</h4>
                     <div class="tech-list" style="margin-bottom: 20px;">
                         <span class="tech-badge">AWS</span>
                         <span class="tech-badge">Azure</span>
@@ -165,7 +160,7 @@
                         <span class="tech-badge">CloudFormation</span>
                     </div>
 
-                    <h4 style="color: #64ffda; font-size: 0.95rem; margin-bottom: 10px;">Containers & Orchestration</h4>
+                    <h4 class="cat-title">Containers & Orchestration</h4>
                     <div class="tech-list" style="margin-bottom: 20px;">
                         <span class="tech-badge">Kubernetes (EKS/AKS/GKE)</span>
                         <span class="tech-badge">Docker</span>
@@ -173,7 +168,7 @@
                         <span class="tech-badge">Istio</span>
                     </div>
 
-                    <h4 style="color: #64ffda; font-size: 0.95rem; margin-bottom: 10px;">CI/CD & DevOps Tools</h4>
+                    <h4 class="cat-title">CI/CD & DevOps Tools</h4>
                     <div class="tech-list" style="margin-bottom: 20px;">
                         <span class="tech-badge">Jenkins</span>
                         <span class="tech-badge">GitHub Actions</span>
@@ -185,7 +180,7 @@
                         <span class="tech-badge">JFrog</span>
                     </div>
 
-                    <h4 style="color: #64ffda; font-size: 0.95rem; margin-bottom: 10px;">Observability & Security</h4>
+                    <h4 class="cat-title">Observability & Security</h4>
                     <div class="tech-list" style="margin-bottom: 20px;">
                         <span class="tech-badge">Prometheus</span>
                         <span class="tech-badge">Grafana</span>
@@ -199,8 +194,7 @@
                         <span class="tech-badge">Prisma Cloud</span>
                     </div>
 
-                    <h4 style="color: #64ffda; font-size: 0.95rem; margin-bottom: 10px;">Messaging, Scripting & Others
-                    </h4>
+                    <h4 class="cat-title">Messaging, Scripting & Others</h4>
                     <div class="tech-list" style="margin-bottom: 20px;">
                         <span class="tech-badge">Redis</span>
                         <span class="tech-badge">Kafka</span>
@@ -214,12 +208,13 @@
 
                 <!-- Right: Education -->
                 <div>
-                    <h3 style="color: #ccd6f6; margin-bottom: 20px;">Education</h3>
+                    <h3 class="sub-title">Education</h3>
                     <div class="edu-card">
                         <span class="degree-name">B.Tech, Electrical & Electronics</span>
                         <div class="uni-name">Swarnandhra College of Engineering</div>
-                        <div style="font-family: monospace; font-size: 0.85rem; margin-top: 5px; color: #8892b0;">2010 –
-                            2014</div>
+                        <div
+                            style="font-family: monospace; font-size: 0.85rem; margin-top: 5px; color: var(--text-secondary);">
+                            2010 – 2014</div>
                     </div>
                 </div>
             </div>
