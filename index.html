@@ -11,140 +11,186 @@
 
 <body>
 
-    <div class="bento-container">
+    <div class="resume-container">
 
-        <!-- Profile Card (Span 2x2) -->
-        <div class="card profile-card">
-            <div class="title-role">
-                <h1>Praveen Ayyappa Aketi</h1>
-                <div class="role-tag">DevOps / SRE Engineer</div>
-                <p style="margin-top: 20px; max-width: 90%; font-size: 0.95rem;">
-                    DevOps/SRE Engineer with 5.6 years of experience in cloud-native operations, CI/CD automation,
-                    observability, and multi-cloud deployments (AWS, Azure, GCP, Kubernetes). Proven ability to reduce
-                    release times (40%), improve reliability (99.9% uptime), and cutting cloud costs (15–20%).
-                </p>
-                <div style="margin-top: 20px; font-size: 0.9rem; color: #a1a1aa;">
-                    <i class="fas fa-map-marker-alt"></i> Hyderabad, India &nbsp;|&nbsp;
-                    <i class="fas fa-envelope"></i> aketi.praveen@gmail.com
+        <!-- SIDEBAR: Profile, Skills, Education -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <h1 class="name">Praveen<br>Aketi</h1>
+                <span class="role">DevOps / SRE Engineer</span>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aketi.praveen@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9849795982</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/praveen-aketi" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/praveen-aketi" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
 
                 <a href="Praveen-Ayyappa-Aketi.pdf" target="_blank" class="download-btn">
-                    <i class="fas fa-download"></i> Download Resume
+                    <i class="fas fa-file-download"></i> Download Resume
                 </a>
             </div>
-        </div>
 
-        <!-- Social Links -->
-        <a href="https://linkedin.com/in/praveen-aketi" target="_blank" class="card social-card"
-            style="background: #0077b5; color: white; border: none;">
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-
-        <a href="https://github.com/praveen-aketi" target="_blank" class="card social-card"
-            style="background: #24292e; color: white; border: none;">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
-
-        <!-- Key Stats -->
-        <div class="card stats-card">
-            <div class="stat-number">5.6</div>
-            <p>Years Exp</p>
-        </div>
-
-        <div class="card stats-card">
-            <div class="stat-number">15-20%</div>
-            <p>Cost Saved</p>
-        </div>
-
-        <!-- Experience Scrollable Card -->
-        <div class="card exp-card">
-            <h2>Professional Journey</h2>
-
-            <div class="job">
-                <h3>Inmar Intelligence</h3>
-                <p class="role-tag" style="background: rgba(255,255,255,0.1); color: white; margin-top: 5px;">Software
-                    Engineer (DevOps/SRE) | 03/2023 – 03/2024</p>
-                <ul style="color: #a1a1aa; padding-left: 20px; line-height: 1.5; font-size: 0.9rem;">
-                    <li>Designed & optimized CI/CD pipelines (GitHub Actions), reducing release times by 40%.</li>
-                    <li>Deployed & managed Kubernetes clusters (EKS, AKS) with auto-scaling (99.9% uptime).</li>
-                    <li>Automated infrastructure provisioning with Terraform (under 1 hour setup).</li>
-                    <li>Implemented Redis Sentinel & Cluster for zero-downtime failover.</li>
-                    <li>Configured Prometheus & Grafana, reducing MTTD by 30% and MTTR by 25%.</li>
-                    <li>Enforced HIPAA-compliant infrastructure and security policies.</li>
-                    <li>Created Python automation scripts saving 15+ engineer-hours/week.</li>
-                </ul>
+            <!-- Education Section (Combined in Sidebar) -->
+            <div>
+                <h3 class="sidebar-title">Education</h3>
+                <div class="edu-item">
+                    <span class="edu-degree">B.Tech, Electrical & Electronics</span>
+                    <span class="edu-school">Swarnandhra College of Engineering</span>
+                    <span class="edu-year">2010 – 2014</span>
+                </div>
             </div>
 
-            <div class="job">
-                <h3>Zscaler</h3>
-                <p class="role-tag" style="background: rgba(255,255,255,0.1); color: white; margin-top: 5px;">Software
-                    Engineer 2 (DevOps) | 08/2022 – 12/2022</p>
-                <ul style="color: #a1a1aa; padding-left: 20px; line-height: 1.5; font-size: 0.9rem;">
-                    <li>Built CI/CD pipelines using Azure Pipelines & GitHub Actions.</li>
-                    <li>Deployed apps to AKS with Helm & FluxCD (GitOps).</li>
-                    <li>Designed secure Azure networking (VNets, NSGs, FW, App Gateway).</li>
-                    <li>Scaled AKS clusters using HPA/VPA, optimizing resources by 20%.</li>
-                    <li>Implemented cost governance (reduction by 15%) & security (Azure AD, RBAC).</li>
-                </ul>
+            <!-- Tech Stack Section (Combined in Sidebar) -->
+            <div>
+                <h3 class="sidebar-title">Tech Stack</h3>
+                <div class="tech-stack-container">
+                    <span class="tech-chip">AWS</span>
+                    <span class="tech-chip">Azure</span>
+                    <span class="tech-chip">GCP</span>
+                    <span class="tech-chip">Kubernetes</span>
+                    <span class="tech-chip">EKS/AKS</span>
+                    <span class="tech-chip">Docker</span>
+                    <span class="tech-chip">Terraform</span>
+                    <span class="tech-chip">Ansible</span>
+                    <span class="tech-chip">Jenkins</span>
+                    <span class="tech-chip">GitHub Actions</span>
+                    <span class="tech-chip">Azure Pipelines</span>
+                    <span class="tech-chip">FluxCD</span>
+                    <span class="tech-chip">Python</span>
+                    <span class="tech-chip">Shell</span>
+                    <span class="tech-chip">Prometheus</span>
+                    <span class="tech-chip">Grafana</span>
+                    <span class="tech-chip">Redis</span>
+                    <span class="tech-chip">Kafka</span>
+                    <span class="tech-chip">IAM/RBAC</span>
+                </div>
             </div>
 
-            <div class="job">
-                <h3>Harman Connected Services</h3>
-                <p class="role-tag" style="background: rgba(255,255,255,0.1); color: white; margin-top: 5px;">Senior
-                    Engineer - Product Dev (SRE) | 02/2021 – 07/2022</p>
-                <ul style="color: #a1a1aa; padding-left: 20px; line-height: 1.5; font-size: 0.9rem;">
-                    <li>Built CI/CD pipelines using Jenkins & Azure Pipelines with SonarQube checks.</li>
-                    <li>Managed hybrid-cloud infrastructure (AWS/Azure) with Terraform.</li>
-                    <li>Developed Ansible playbooks cutting manual configuration by 70%.</li>
-                    <li>Implemented observability with Prometheus & Grafana.</li>
-                    <li>Configured Azure Load Balancers, App Gateway & Traffic Manager.</li>
-                </ul>
-            </div>
+        </aside>
 
-            <div class="job">
-                <h3>C2N IT Services</h3>
-                <p class="role-tag" style="background: rgba(255,255,255,0.1); color: white; margin-top: 5px;">Associate
-                    Software Engineer | 09/2018 – 01/2021</p>
-                <ul style="color: #a1a1aa; padding-left: 20px; line-height: 1.5; font-size: 0.9rem;">
-                    <li>Implemented CI/CD in Jenkins, reducing build failures by 20%.</li>
-                    <li>Managed Git repositories and branching strategies.</li>
-                    <li>Assisted in AWS infrastructure provisioning (EC2, S3, IAM).</li>
-                    <li>Automated routine tasks with Shell scripts.</li>
-                    <li>Performed incident management and RCA.</li>
-                </ul>
-            </div>
-        </div>
+        <!-- MAIN CONTENT: Summary & Experience -->
+        <main class="main-content">
 
-        <!-- Skills Card -->
-        <div class="card skills-card">
-            <h2>Tech Stack & Skills</h2>
-            <div class="skills-tags">
-                <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
-                <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure</span>
-                <span class="skill-tag"><i class="fab fa-google"></i> GCP</span>
-                <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-                <span class="skill-tag">Kubernetes (EKS/AKS)</span>
-                <span class="skill-tag">Terraform</span>
-                <span class="skill-tag">Ansible</span>
-                <span class="skill-tag">Jenkins</span>
-                <span class="skill-tag">GitHub Actions</span>
-                <span class="skill-tag">FluxCD (GitOps)</span>
-                <span class="skill-tag">Python & Shell</span>
-                <span class="skill-tag">Prometheus & Grafana</span>
-                <span class="skill-tag">Redis</span>
-                <span class="skill-tag">Security (IAM/RBAC)</span>
-            </div>
-        </div>
+            <!-- Summary -->
+            <section class="summary-box">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary-text">
+                    DevOps/SRE Engineer with 5.6 years of experience in cloud-native operations, CI/CD automation,
+                    observability, and multi-cloud deployments (AWS, Azure, GCP, Kubernetes). Proven ability to reduce
+                    release times (40%), improve reliability (99.9% uptime), and cut cloud costs (15–20%) through
+                    automation, IaC, GitOps, monitoring and cost governance. Strong background in incident response,
+                    HIPAA-compliant infrastructure, security governance (IAM, RBAC, Azure AD), security automation, and
+                    observability. Adept at collaborating with cross-functional teams and driving end-to-end DevOps &
+                    SRE transformation initiatives.
+                </p>
+            </section>
 
-        <!-- Education Card -->
-        <div class="card" style="grid-column: span 2;">
-            <h2>Education</h2>
-            <h3>B.Tech, Electrical & Electronics Engineering</h3>
-            <p>Swarnandhra College of Engineering and Technology (2010 – 2014)</p>
-        </div>
+            <!-- Experience -->
+            <section>
+                <h2 class="section-title">Experience</h2>
 
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <span class="company">Inmar Intelligence</span>
+                            <span class="job-role">Software Engineer (DevOps/SRE)</span>
+                        </div>
+                        <span class="job-date">03/2023 – 03/2024</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Designed & optimized CI/CD pipelines (GitHub Actions), reducing release times by 40% and
+                            improving reliability.</li>
+                        <li>Deployed & managed Kubernetes clusters (EKS, AKS) with auto-scaling, ensuring 99.9% uptime.
+                        </li>
+                        <li>Automated infrastructure provisioning with Terraform, reducing environment setup to under 1
+                            hour.</li>
+                        <li>Implemented Redis Sentinel & Cluster to achieve high availability and failover with zero
+                            downtime.</li>
+                        <li>Configured Prometheus & Grafana dashboards, reducing MTTD by 30% and MTTR by 25%.</li>
+                        <li>Enforced HIPAA-compliant infrastructure with encryption-at-rest, IAM policies, and audit
+                            logging.</li>
+                        <li>Created Python automation scripts for log parsing and monitoring, saving 15+
+                            engineer-hours/week.</li>
+                        <li>Participated in on-call rotations (PagerDuty) leading incident response and RCA.</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <span class="company">Zscaler</span>
+                            <span class="job-role">Software Engineer 2 (DevOps)</span>
+                        </div>
+                        <span class="job-date">08/2022 – 12/2022</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Built CI/CD pipelines using Azure Pipelines & GitHub Actions, integrating security scans.
+                        </li>
+                        <li>Designed secure Azure networking (VNets, NSGs, Load Balancers, App Gateway, Firewall).</li>
+                        <li>Deployed apps to AKS with Helm & FluxCD (GitOps), ensuring consistent rollouts.</li>
+                        <li>Scaled AKS clusters with HPA & VPA, optimizing resource utilization by 20%.</li>
+                        <li>Implemented cost governance (reduction by 15%) and security (Azure AD, RBAC, PIM).</li>
+                        <li>Developed & tested disaster recovery strategies using Azure Backup & Recovery Vaults.</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <span class="company">Harman Connected Services</span>
+                            <span class="job-role">Senior Engineer - Product Dev (SRE)</span>
+                        </div>
+                        <span class="job-date">02/2021 – 07/2022</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Built CI/CD pipelines using Jenkins & Azure Pipelines, integrating SonarQube checks.</li>
+                        <li>Managed hybrid-cloud infrastructure (AWS/Azure) with Terraform.</li>
+                        <li>Developed Ansible playbooks for automation, cutting manual tasks by 70%.</li>
+                        <li>Implemented observability with Prometheus & Grafana to detect outages faster.</li>
+                        <li>Configured Azure Load Balancers, App Gateway & Traffic Manager for global routing.</li>
+                        <li>Collaborated with security teams to enforce Azure Policy & AWS IAM compliance.</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <span class="company">C2N IT Services</span>
+                            <span class="job-role">Associate Software Engineer</span>
+                        </div>
+                        <span class="job-date">09/2018 – 01/2021</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Implemented CI/CD pipelines in Jenkins with Maven/Nexus, reducing build failures by 20%.
+                        </li>
+                        <li>Managed Git repositories (branching, merging) for smoother collaboration.</li>
+                        <li>Assisted in AWS infrastructure provisioning (EC2, S3, IAM) and maintenance.</li>
+                        <li>Automated routine server administration tasks with Shell scripts.</li>
+                        <li>Performed incident management and root cause analysis (RCA).</li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </main>
     </div>
 
 </body>
